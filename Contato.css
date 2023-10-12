@@ -33,19 +33,23 @@ input, textarea {
 
 }
 
-input:hover, textarea:hover, input:focus, textarea:focus, placeholder:hover, name{
+input:hover, textarea:hover, input:focus, textarea:focus, placeholder:hover, name {
     border-color: aqua;
     box-shadow: 5px 0px 9px rgb(114, 200, 205);
     background-color: #66FFF;
     color: black;
     font-weight: bold;
     text-align: black;
-
 }
+
 .placeholder .name{
     color: black;
 }
-
+@media screen and (max-width: 600px){
+.placeholder .name{
+    color: black;
+}
+  }
 
 .enviar {
     background-color: aqua;
