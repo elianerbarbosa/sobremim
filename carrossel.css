@@ -214,6 +214,150 @@
             background-color: #308d46;
         }
   
+    /* ----------------------------my family----------------------------------- */
+   /* estilo de imagem */
+        .slideshow-wrapper2 {
+            display: flex;
+  
+            /* largura proporcional se 4 imagens largura 400% se 5 imagens largura de 500%. */
+            width: 400%;
+            height: 100%;
+            position: relative;
+  
+            /* animação */
+            animation: slideshow2 20s infinite;
+        }
+  
+        /* largura e altura de imagens */
+        .slide {
+            width: 100%;
+            height: 100%;
+        }
+  
+        .slide-img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+  
+        /* @keyframes aanimação com configurações 4 imagens. */
+        @keyframes slideshow2 {
+            0% {
+                left: 0;
+            }
+  
+            10% {
+                left: 0;
+            }
+  
+            15% {
+                left: -100%;
+            }
+  
+            25% {
+                left: -100%;
+            }
+  
+            30% {
+                left: -200%;
+            }
+  
+            40% {
+                left: -200%;
+            }
+  
+            45% {
+                left: -300%;
+            }
+  
+            55% {
+                left: -300%;
+            }
+  
+            60% {
+                left: -200%;
+            }
+  
+            70% {
+                left: -200%;
+            }
+  
+            75% {
+                left: -100%;
+            }
+  
+            85% {
+                left: -100%;
+            }
+  
+            90% {
+                left: 0%;
+            }
+        }
+  
+        /* fim da configuração slide */
+  
+        /* botão de controle do carrossel */
+        .slide-btn {
+            background-color: whitesmoke;
+            border-radius: 50%;
+            border: .2rem solid blue;
+            width: 1.2rem;
+            height: 1.2rem;
+            outline: none;
+            cursor: pointer;
+  
+            /* botão parte inferior */
+            position: absolute;
+            bottom: 3%;
+            left: 50%;
+            transform: translateX(-50%);
+            z-index: 70;
+        }
+  
+        /* colocando botão na posição correta */
+        .slide-btn-5 {
+            left: 45%;
+        }
+  
+        .slide-btn-6 {
+            left: 50%;
+        }
+  
+        .slide-btn-7 {
+            left: 55%;
+        }
+  
+        .slide-btn-8 {
+            left: 60%;
+        }
+  
+        /* botão para a imagem associada a ele. */
+        .slide-btn-5:focus~.slideshow-wrapper2 {
+            animation: none;
+            left: 0;
+        }
+  
+        .slide-btn-6:focus~.slideshow-wrapper {
+            animation: none;
+            left: -100%;
+        }
+  
+        .slide-btn-7:focus~.slideshow-wrapper {
+            animation: none;
+            left: -200%;
+        }
+  
+        .slide-btn-8:focus~.slideshow-wrapper {
+            animation: none;
+            left: -300%;
+        }
+  
+        /* cor de fnd qnd mudar slide */
+        .slide-btn:focus {
+            background-color: #308d46;
+        }
+  
     
 
 
